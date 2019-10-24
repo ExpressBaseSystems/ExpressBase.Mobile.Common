@@ -3,6 +3,7 @@ using System.ComponentModel;
 using ExpressBase.Mobile.Objects;
 using System.Runtime.Serialization;
 using System.Data.Common;
+using ExpressBase.Mobile.Common.Structures;
 
 namespace ExpressBase.Mobile.Common.Objects
 {
@@ -34,16 +35,18 @@ namespace ExpressBase.Mobile.Common.Objects
 
         public virtual bool DoNotPersist { get; set; }
 
-        public virtual bool IsReadOnly { get; set; }//------------------------------
+        public virtual bool IsReadOnly { get; set; }
 
-        public virtual bool ReadOnly { get; set; }//------------------------------
+        public virtual bool ReadOnly { get; set; }
 
         public virtual bool Hidden { get; set; }
 
-        public virtual bool SkipPersist { get; set; }//------------------------------
+        public virtual bool SkipPersist { get; set; }
 
         public virtual int TabIndex { get; set; }
 
         public virtual string Label { get; set; }
+
+        public virtual EbDbTypes EbDbType { get; set; }
     }
 }
